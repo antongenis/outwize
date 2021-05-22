@@ -17,6 +17,7 @@ $(document).ready(function() {
     info.html('Loading...').css('color', 'red').slideDown();
     e.preventDefault();
     if(validate()) {
+		alert('here')
       $.ajax({
         type: "POST",
         url: "mailer.php",
