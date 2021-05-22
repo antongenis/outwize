@@ -1,7 +1,7 @@
 <?php
 
 if($_POST) {
-  $to = "phpcodertech@gmail.com"; // your mail here
+  $to = "anton.genis@gmail.com"; // your mail here
   $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
   $subject = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
   $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
