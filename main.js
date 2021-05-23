@@ -14,10 +14,11 @@ $(document).ready(function() {
   });
   
   submit.on('click', function(e) {
+	  alert('here')
     info.html('Loading...').css('color', 'red').slideDown();
     e.preventDefault();
     if(validate()) {
-		alert('here')
+		alert('here1')
       $.ajax({
         type: "POST",
         url: "mailer.php",
